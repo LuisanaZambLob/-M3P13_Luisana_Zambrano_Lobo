@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información de enlaces</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Lorem ipsum</h2>
+    <p>Este es el primer párrafo.
+        Lorem ipsum dolor sit, amet consectetur <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada">adipisicing elit.</a> Tempora sequi exercitationem similique fugit minima unde. Ducimus culpa quaerat soluta voluptatibus! Voluptatum nemo quod nesciunt placeat commodi mollitia, sequi atque velit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic a molestias dolore beatae delectus consequatur rem natus fuga? Ipsa alias atque explicabo vel exercitationem non quibusdam eos a voluptatum consequuntur!
+    </p>
+    <p>Este es el segundo párrafo.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quasi rerum sed pariatur quo perferendis nisi magni earum <a href="https://youtube.com/">enim reprehenderit.</a> Ad illum id magni voluptas porro architecto maxime reprehenderit veritatis?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nostrum odio molestias facilis fuga quia deleniti! Qui, perspiciatis. Nesciunt non laborum debitis consequatur sint ipsam sequi neque accusamus animi veritatis.
+    </p>
+    <p>Este es el tercer párrafo con 
+        Lorem ipsum <a href="https://www.twitter.com">dolor</a> sit amet consectetur adipisicing elit. Aliquid sunt officia totam quidem odio impedit qui explicabo asperiores neque? Ipsa voluptate reiciendis ab. Aliquid numquam optio animi recusandae ipsam ad. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vitae eveniet ut, a unde laboriosam necessitatibus porro impedit laborum sed debitis suscipit culpa delectus nostrum sunt sapiente quae repudiandae temporibus.<a href="https://www.twitter.com">un enlace</a>.</p>
+    
+        <!--Crear cuatro botones para cada una de las tareas que debe de hacer el script-->
+
+    <button id="boton1">Total de enlaces</button>
+    <button id="boton2">Penultimo enlace</button>
+    <button id="boton3">Nº enlaces a twitter</button>
+    <button id="boton4">Nº enlaces a 3er parrafo</button>
+    <script>
+
+            document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('boton1').addEventListener('click', contarEnlaces);
+            document.getElementById('boton2').addEventListener('click', obtenerDireccionPenultimoEnlace);
+            document.getElementById('boton3').addEventListener('click', contarEnlacesATwitter);
+            document.getElementById('boton4').addEventListener('click', contarEnlacesEnTercerParrafo);
+        });
+    </script>
+</body>
+</html>
